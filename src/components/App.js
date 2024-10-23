@@ -12,7 +12,8 @@ import CreatePost from "./CreatePost";
 const App = () => {
   const [posts, setPosts] = useState([
     { id: 1, author: 'John', content: 'Hello World', reactions: 0 },
-    { id: 2, author: 'Jane', content: 'Goodbye World', reactions: 2 }
+    { id: 2, author: 'Jane', content: 'Goodbye World', reactions: 2 },
+    { id: 3, author: 'gaurav', content: 'Goodbye World', reactions: 2 }
   ]);
   const [users, setUsers] = useState(['John', 'Jane']);
   const [notifications, setNotifications] = useState([]);

@@ -5,7 +5,6 @@ const LandingPage = ({posts}) => {
   return (
     <div className='posts-list'>
       <h1>Add New Post</h1>
-
       <div className="">
         <label htmlFor="" id='postTitle'>Post Title:</label>
         <input type="text" placeholder="What is on your mind?"/>
