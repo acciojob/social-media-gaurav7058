@@ -15,7 +15,7 @@ const App = () => {
     { id: 2, author: 'Jane', content: 'Goodbye World', reactions: 2 },
     { id: 3, author: 'gaurav', content: 'Goodbye World', reactions: 2 }
   ]);
-  const [users, setUsers] = useState(['John', 'Jane']);
+  const [users, setUsers] = useState(['John', 'Jane','gaurav']);
   const [notifications, setNotifications] = useState([]);
   return (
 <BrowserRouter>
