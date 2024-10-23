@@ -1,0 +1,27 @@
+.container{
+    margin-top: -19px;
+}
+nav{
+    background: rebeccapurple;
+    height: 105px;
+}
+.nav-heading{
+
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links a{
+    margin: 5px;
+    border: 1px solid black;
+    padding: 5px 31px;
+    border-radius: 5px;
+    color: white;
+}
+.nav-1{
+
+}
+.nav-2{
+
+}
