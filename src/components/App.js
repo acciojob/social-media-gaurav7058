@@ -7,7 +7,7 @@ import NavBar from "./NavBar";
 import Users from "./Users";
 import Post from "./Post";
 import Notification from "./Notification";
-import CreatePostPage from "./CreatePost";
+import CreatePost from "./CreatePost";
 
 const App = () => {
   const [posts, setPosts] = useState([
@@ -23,9 +23,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<LandingPage posts={posts}/>}/>
         <Route path="/users" element={<Users posts={posts} users={users}/>}/>
-        <Route path="/post" element={<Post />}/>
+        <Route path="/post" element={<Post posts={posts}/>}/>
         <Route path="/notifications" element={<Notification notifications={notifications} setNotifications={setNotifications}/>}/>
-        <Route path="/post" element={<CreatePostPage />}/>
+        <Route path="/create-post" element={<CreatePost users={users} setPosts={setPosts}/>}/>
       </Routes>
     </div>
 </BrowserRouter>

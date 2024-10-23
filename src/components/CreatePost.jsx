@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const CreatePostPage = ({ users, setPosts }) => {
+const CreatePost = ({ users, setPosts }) => {
   const [author, setAuthor] = useState(users[0]);
   const [content, setContent] = useState('');
   const navigate = useNavigate();
@@ -34,4 +34,4 @@ const CreatePostPage = ({ users, setPosts }) => {
   );
 };
 
-export default CreatePostPage;
+export default CreatePost;

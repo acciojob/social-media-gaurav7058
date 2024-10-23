@@ -2,21 +2,24 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/landingPage.css"
 const LandingPage = ({posts}) => {
-    const[post,setPost]=useState([])
   return (
-    <div>
-      <div className="container">
-      <h1>Welcome to GenZ Social</h1>
-      <div className="posts-list">
-        {posts.map((post) => (
-          <div key={post.id} className="post">
-            <h3>{post.author}</h3>
-            <p>{post.content}</p>
-            <p>Reactions: {post.reactions}</p>
-            <Link to={`/edit-post/${post.id}`} className="button">Edit</Link>
-          </div>
-        ))}
-      </div>
+    <div className='posts-list'>
+      <h1>Add New Post</h1>
+
+      <div className="">
+        <label htmlFor="" id='postTitle'>Post Title:</label>
+        <input type="text" placeholder="What is on your mind?"/>
+        <label htmlFor="" id='postAuthor'>Author:</label>
+        <select name="" id="">
+          <option value=""></option>
+          <option value="">john</option>
+          <option value="">jane</option>
+        </select>
+        <label htmlFor="" id='postContent'>Content:</label>
+        <textarea name="" id="">
+
+        </textarea>
+        <button>Save Post</button>
       </div>
     </div>
   );
